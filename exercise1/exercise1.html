@@ -1,0 +1,295 @@
+<!DOCTYPE html><html><head>
+      <title>exercise1</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////home/luis/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.11/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="exercise-1-for-the-course-high-performance-computing">Exercise 1 for the course High Performance Computing. </h1>
+<p>This is the exercise for Prof. Cozzini section of the 2023/2024 HPC course. It consists of several possible exercises: please read carefully and decide which one to take.</p>
+<p>This document was cleaned up and completed with additional information  by Niccolo Tosato and Marco Celoria.<br>
+Prof. Cozzini aknoledge their kind contribution.</p>
+<p>Version <code>1.0</code>: this document can be modified several times in the next few days in order to improve the clearness of the information to provide a better understanding of what we are asking.</p>
+<h2 id="rules">Rules </h2>
+<ul>
+<li>Exercise should be done individually: no group please !</li>
+<li>Materials (code/scripts/pictures and final report) should be prepared on a github repository, starting with this one and sharing it with the teachers.</li>
+<li>A report should be sent by e-mail to the teachers at least five days in advance: the name of the file should <code>YOURSURNAME_report.pdf</code></li>
+<li>Results and numbers of the exercises should be presented (also with the help of slides) in a max 10 minutes presentation: this will be part of the exam. A few more questions on the topic of the courses will be asked at the end of the presentation.</li>
+</ul>
+<p><em><strong>deadlines</strong></em></p>
+<p>You should send us the e-mail at least one week before the exam.<br>
+For the first two  scheduled "appelli" this means:</p>
+<ul>
+<li>exam scheduled at 06.02.2024 <em><strong>deadline 01.02.2023 at midnight</strong></em></li>
+<li>exam scheduled at 27.02.2024  <em><strong>deadline 22.02.2023 at midnight</strong></em></li>
+</ul>
+<p>The report should clearly explain which software stack we should use to compile the codes and run all the programs you used in your exercises. Providing well-done Makefiles/scripts to automatize the work is highly appreciated.</p>
+<h1 id="the-exercise-compare-different-openmpi-algorithms-for-collective-operations">The exercise: compare different openMPI algorithms for collective operations. </h1>
+<h2 id="introduction">Introduction </h2>
+<p>The openMPI library implements several algorithms to perform collective operations according to many different parameters. The exercise consists of an evaluation of some of them for two different collective operations:</p>
+<ul>
+<li>broadcast operation: mandatory for all</li>
+<li>a collective operation at your choice among the following four: <code>gather</code>, <code>scatter</code>, <code>barrier</code>, <code>reduce</code>.</li>
+</ul>
+<p>You are supposed to estimate the latency of default openMPI implementation, varying the number of processes and the size of the messages exchanged and then compare this latter with the values you obtain using different algorithms.</p>
+<p>The exercise does not require any programming effort: students are supposed to use a well-known MPI benchmark: the  <a href="https://mvapich.cse.ohio-state.edu/benchmarks/">OSU</a> one and they are supposed to run them on at least two nodes of the ORFEO cluster, choosing among <em>epyc</em>, <em>thin</em> and <em>fat</em>, using all the available cores on a single node.</p>
+<h2 id="steps-to-be-performed">Steps to be performed </h2>
+<ul>
+<li>
+<p>Download and compile the OSU benchmark available ON this page: <a href="https://mvapich.cse.ohio-state.edu/benchmarks/">https://mvapich.cse.ohio-state.edu/benchmarks/</a> .More detailed instruction about compilation can be found <a href="https://mvapich.cse.ohio-state.edu/static/media/mvapich/README-OMB.txt">here</a> .</p>
+</li>
+<li>
+<p>Select 2 whole computational nodes, i.e. two  [epyc|thin|fat] nodes</p>
+</li>
+<li>
+<p>Select an additional blocking MPI collective operation you want to test among one of the four listed above. The collective benchmarks binaries files are placed under <code>osu-micro-benchmarks-7.3/c/mpi/collective/blocking</code> directory.</p>
+</li>
+<li>
+<p>Familiarize with the <code>osu_bcast</code> and the additional collective operation you choose: run several repetitions of the programs and collect performance numbers, estimating the error in order to have a baseline for the two operations. Look at <code>mpirun osu_bcast --help</code> to have all options printed out, consider to increment warmup iterations(<code>-x</code>) and total iterations (<code>-i</code>).</p>
+</li>
+<li>
+<p>Select for the two collective operation (<code>bcast</code>, mandatory for all, and the one you selected) at most three possible algorithms and perform the same set of measurements of the previous step.</p>
+</li>
+<li>
+<p>Collect and compare numbers among the baseline and the algorithms you choose.</p>
+</li>
+<li>
+<p>Try to understand/infer the performance model behind the algorithms you selected, taking into consideration the architecture on which they are being executed.</p>
+</li>
+<li>
+<p>Report your result in a nice report and prepare a short presentation (no more than 10 slides)</p>
+</li>
+</ul>
+<p>Feel free to experiment with different messages size and task mapping with <code>--map-by</code> option of <code>mpirun</code>.</p>
+<h2 id="how-to-select-the-openmpi-algorithms-available">How to select the openMPI algorithms available </h2>
+<p>Open MPI architecture is based on software components, plugged into the library kernel. A component provides functionality with specific implementation features. For instance, a collective component known as <em>Tuned</em> implements different algorithms for each collective operation defined in MPI as a sequence of point-to-point transmissions between the involved processes.<br>
+By means of the <code>ompi_info</code> we can see the detailed information about the openMPI implementation and parameter that one can choose in order to select different algorithms. In the following we report the parameter you neeed to choose to select different algorithms for the following collective operations:</p>
+<ul>
+<li><code>barrier</code></li>
+<li><code>broadcast</code></li>
+<li><code>reduce</code></li>
+<li><code>gather</code></li>
+<li><code>scatter</code></li>
+</ul>
+<p>In particular, to retrive all parameters for collective calls use : <code>ompi_info --param coll all --level 9</code>.</p>
+<p>To enable this choice the following parameter must be specify:</p>
+<pre class="language-text">      MCA coll tuned: parameter "coll_tuned_use_dynamic_rules" (current
+                      value: "false", data source: default, level: 6
+                      tuner/all, type: bool)
+                      Switch used to decide if we use static (compiled/if
+                      statements) or dynamic (built at runtime) decision
+                      function rules
+                      Valid values: 0: f|false|disabled|no|n, 1:
+                      t|true|enabled|yes|y
+</pre>
+<p>The parameters for the five operation we focus on are the following.</p>
+<ul>
+<li>
+<p><code>barrier</code> algorithms:</p>
+<pre class="language-text">    MCA coll tuned: parameter "coll_tuned_barrier_algorithm" (current
+                    value: "ignore", data source: default, level: 5
+                    tuner/detail, type: int)
+                    Which barrier algorithm is used. Can be locked down
+                    to choice of: 0 ignore, 1 linear, 2 double ring, 3:
+                    recursive doubling 4: bruck, 5: two proc only, 6:
+                    tree. Only relevant if coll_tuned_use_dynamic_rules
+                    is true.
+                    Valid values: 0:"ignore", 1:"linear",
+                    2:"double_ring", 3:"recursive_doubling", 4:"bruck",
+                    5:"two_proc", 6:"tree"
+</pre>
+</li>
+<li>
+<p><code>bcast</code> algorithms:</p>
+<pre class="language-text">    MCA coll tuned: parameter "coll_tuned_bcast_algorithm" (current
+                    value: "ignore", data source: default, level: 5
+                    tuner/detail, type: int)
+                    Which bcast algorithm is used. Can be locked down
+                    to choice of: 0 ignore, 1 basic linear, 2 chain, 3:
+                    pipeline, 4: split binary tree, 5: binary tree, 6:
+                    binomial tree, 7: knomial tree, 8:
+                    scatter_allgather, 9: scatter_allgather_ring. Only
+                    relevant if coll_tuned_use_dynamic_rules is true.
+                    Valid values: 0:"ignore", 1:"basic_linear",
+                    2:"chain", 3:"pipeline", 4:"split_binary_tree",
+                    5:"binary_tree", 6:"binomial", 7:"knomial",
+                    8:"scatter_allgather", 9:"scatter_allgather_ring"
+</pre>
+</li>
+<li>
+<p><code>reduce</code> algorithms:</p>
+<pre class="language-text">    MCA coll tuned: parameter "coll_tuned_reduce_algorithm" (current
+                    value: "ignore", data source: default, level: 5
+                    tuner/detail, type: int)
+                    Which reduce algorithm is used. Can be locked down
+                    to choice of: 0 ignore, 1 linear, 2 chain, 3
+                    pipeline, 4 binary, 5 binomial, 6 in-order binary,
+                    7 rabenseifner. Only relevant if
+                    coll_tuned_use_dynamic_rules is true.
+                    Valid values: 0:"ignore", 1:"linear", 2:"chain",
+                    3:"pipeline", 4:"binary", 5:"binomial",
+                    6:"in-order_binary", 7:"rabenseifner"
+</pre>
+</li>
+<li>
+<p><code>gather</code> algorithms:</p>
+<pre class="language-text">    MCA coll tuned: parameter "coll_tuned_gather_algorithm" (current
+                    value: "ignore", data source: default, level: 5
+                    tuner/detail, type: int)
+                    Which gather algorithm is used. Can be locked down
+                    to choice of: 0 ignore, 1 basic linear, 2 binomial,
+                    3 linear with synchronization. Only relevant if
+                    coll_tuned_use_dynamic_rules is true.
+                    Valid values: 0:"ignore", 1:"basic_linear",
+                    2:"binomial", 3:"linear_sync"
+</pre>
+</li>
+<li>
+<p><code>scatter</code> algorithms:</p>
+<pre class="language-text">    MCA coll tuned: parameter "coll_tuned_scatter_algorithm" (current
+                    value: "ignore", data source: default, level: 5
+                    tuner/detail, type: int)
+                    Which scatter algorithm is used. Can be locked down
+                    to choice of: 0 ignore, 1 basic linear, 2 binomial,
+                    3 non-blocking linear. Only relevant if
+                    coll_tuned_use_dynamic_rules is true.
+                    Valid values: 0:"ignore", 1:"basic_linear",
+                    2:"binomial", 3:"linear_nb"
+</pre>
+</li>
+</ul>
+<p>We provide here an example of how to select different algorithms for a specific operation (i.e. bcast) one should issue the following command:</p>
+<p><code>$mpirun  --mca coll_tuned_use_dynamic_rules true --mca coll_tuned_bcast_algorithm 0 osu_bcast</code></p>
+<p>that provides the following output:</p>
+<pre data-role="codeBlock" data-info="" class="language-text text"><code># OSU MPI Broadcast Latency Test v7.3
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                      13.52
+2                      14.06
+4                      14.21
+8                      14.23
+16                     14.65
+32                     15.71
+64                     15.47
+128                    54.24
+256                    53.93
+512                    51.28
+1024                   51.87
+2048                   52.75
+4096                   57.64
+8192                   55.57
+16384                  75.01
+32768                  83.51
+65536                 107.96
+131072                132.61
+262144                222.99
+524288                409.06
+1048576               986.45
+</code></pre><p>The program gives the latency on 128 processors with the default algorithm chosen automatically by openMPI. One can now play with other algorithms, for instance, number 3 (pipeline):</p>
+<pre data-role="codeBlock" data-info="" class="language-text text"><code>$ mpirun  --mca coll_tuned_use_dynamic_rules true --mca coll_tuned_bcast_algorithm 3 osu_bcast
+
+
+# OSU MPI Broadcast Latency Test v7.3
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                      28.93
+2                      26.80
+4                      27.49
+8                      28.29
+16                     30.38
+32                     29.78
+64                     30.04
+128                    34.72
+256                    31.95
+512                    33.91
+1024                   40.92
+2048                   47.01
+4096                   61.56
+8192                   92.10
+16384                 295.37
+32768                 432.01
+65536                 746.98
+131072               1375.86
+262144               2710.71
+524288               5466.00
+1048576             11033.92
+</code></pre><p>As one can notice the difference is <strong>remarkable</strong>.</p>
+<h2 id="details-on-broadcast-algorithms">Details on broadcast algorithms </h2>
+<p><a href="https://doi.org/10.1016/j.jpdc.2022.03.012">Reference 1</a> below discuss in detail a few algorithms implemented in the openMPI <code>MPI_Bcast</code> routine; we report here a partial section of the paper to help understand better the way they work and to infer a possible performance model for each of them.</p>
+<p>In the broadcast operation <code>MPI_Bcast</code> a process called root sends a message with the same data to all processes in the communicator. Messages can be segmented into transmissions. Segmentation of messages is a common technique used for increasing the communication parallelism by avoiding the rendezvous protocol, and hence, improving the performance. It consists of dividing up the message into smaller fragments called segments and sending them in sequence.</p>
+<p>Every algorithm implementing the broadcast in the <em>Tuned</em> component defines a communication graph with a specific topology between the P ranks in the communicator. Ranks are the nodes in the graph, and they are mapped to the processes of the parallel machine. Some features and topology of the broadcast algorithms implemented in openMPI Tuned component are listed below (only 3 listed for brevity, figures from <strong>[1]</strong>):</p>
+<ul>
+<li>
+<p><em>Flat tree algorithm</em>. The algorithm employs a single level tree topology shown in <em>Fig. (a)</em> where the root node has P-1<br>
+children. The message is transmitted to child nodes without segmentation.</p>
+</li>
+<li>
+<p><em>Chain tree algorithm</em>. Each internal node in the topology has one child (see <em>Fig. (b)</em>). The message is split into segments and transmission of segments continues in a pipeline until the last node gets the broadcast message. ith process receives the message from the (i-1)-th process, and sends it to (i+1)-th process.</p>
+</li>
+<li>
+<p><em>Binary tree algorithm</em>. Unlike the chain tree, each internal pro-<br>
+cess has two children, and hence data is transmitted from each<br>
+node to both children (<em>Fig. (c)</em>). Segmentation technique is employed in this algorithm. For simplicity we assume that the<br>
+binary tree is complete, then P = 2H −1 where H is the height of the tree, H = log 2(P + 1).<br>
+<img src="./algs.png" alt="Image"></p>
+</li>
+</ul>
+<p>In <a href="https://doi.org/10.1016/j.jpdc.2022.03.012">Reference 1</a> all other algorithms are depicted and discussed.</p>
+<h2 id="performance-model-hint">Performance model hint </h2>
+<p>To develop a simple performance model, it is necessary to estimate the latency of point-to-point communication routines, since collectives are built on top of them. You can use the OSU benchmark again, specifically the <code>osu_latency</code> tool located in <code>osu-micro-benchmarks-7.3/c/mpi/pt2pt/standard</code>. Explore the latency among cores located in different regions of the processor using the <code>mpirun</code> option <code>--cpu-list</code>. For instance, running <code>mpirun -np 2 --cpu-list 0,8 osu_latency</code> will reveal higher latency compared to 2 neighboring cores, as selected by the command <code>mpirun -np 2 --cpu-list 0,1 osu_latency</code>.</p>
+<p>AMD epyc results:</p>
+<pre data-role="codeBlock" data-info="" class="language-text text"><code>$ mpirun -np 2 osu_latency
+# OSU MPI Latency Test v7.3
+# Size          Latency (us)
+# Datatype: MPI_CHAR.
+1                       0.15
+2                       0.15
+4                       0.15
+...
+...
+$ mpirun -np 2 --cpu-list 0,8  osu_latency
+# OSU MPI Latency Test v7.3
+# Size          Latency (us)
+# Datatype: MPI_CHAR.
+1                       0.35
+2                       0.34
+4                       0.35
+</code></pre><p>With the help of the latency estimated above we can develop an example of naive model for the broadcast collective while the pipeline algorithm is selected. A naive model with fixed message size is showed below and compared with the true measures collected changing the broadcast communication algorithm and choosing <em>core</em> mapping. Many other models, comparison and option are possible. The procedure is similar in case of multiple nodes.</p>
+<p><img src="./naive_model.png" alt="Image"></p>
+<p>When building the model of collective keep in mind the mapping specified throught the flag <code>--map-by</code>, and the architecture that you are running on.</p>
+<h2 id="references">References </h2>
+<p>[1] Emin Nuriyev, Juan-Antonio Rico-Gallego, and Alexey Lastovetsky. <em>"Model-based selection of optimal MPI broadcast algorithms for multi-core clusters."</em>.  Journal of Parallel and Distributed Computing, vol. 165, 2022, pp. 1-16. ISSN: 0743-7315. DOI: <a href="https://doi.org/10.1016/j.jpdc.2022.03.012">https://doi.org/10.1016/j.jpdc.2022.03.012</a>.</p>
+<p>[2] You can find other instances of benchmarking, along with information about topology and cluster configuration, in the <a href="https://orfeo-doc.areasciencepark.it/examples/">official Orfeo documentation</a>.</p>
+<p>[3] <a href="https://arxiv.org/pdf/2204.03290.pdf">AMD epyc topology</a></p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
