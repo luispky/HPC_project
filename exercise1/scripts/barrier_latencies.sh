@@ -1,9 +1,9 @@
 #!/bin/bash
 #SBATCH --job-name=ex1EPYCarr          
 #SBATCH --nodes=2
-#SBATCH --ntasks-per-node=128      # Use all available cores on each node
-#SBATCH --output=output_epyc.%j.out       # Standard output log
-#SBATCH --error=error_epyc.%j.err         # Error log
+#SBATCH --ntasks-per-node=128     
+#SBATCH --output=output_epyc.%j.out
+#SBATCH --error=error_epyc.%j.err  
 #SBATCH --time=02:00:00
 #SBATCH --partition=EPYC
 #SBATCH --nodelist=epyc002,epyc004
@@ -69,7 +69,3 @@ done
 #   ../bin/osu_${collective_operation} \  # Specify the executable for the current collective operation
 #   -i 1e4 \  # Set the number of warm-up iterations
 #   -x 1e4) # Set the number of total iterations
-
-# Outside the Slurm script, retrieve job statistics
-# After the job completes, run:
-# sacct -j <job_id> --format=JobID,JobName,Partition,MaxRSS,MaxVMSize,Elapsed,State
