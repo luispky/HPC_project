@@ -5,7 +5,9 @@
 ## Student's Info
 
 Name: Luis Fernando Palacios Flores ([luf.palacios@gmail.com](mailto:luf.palacios@gmail.com))([luisfernando.palaciosflores@studenti.units.it](mailto:luisfernando.palaciosflores@studenti.units.it))
+
 Student Number: 302004
+
 Study Curriculum: SM38 DATA SCIENCE AND ARTIFICIAL INTELLIGENCE
 
 ## Project's organization
